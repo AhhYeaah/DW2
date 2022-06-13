@@ -1,0 +1,91 @@
+body {
+  background: linear-gradient(to bottom right, #233, #333);
+  height: 100vh;
+  width: 100%;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+main {
+  width: 300px;
+  height: 200px;
+}
+
+form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  background-color: #222;
+  border-radius: 30px;
+}
+
+input {
+  height: 2rem;
+  width: 250px;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+input:focus {
+  outline: 2px solid #000;
+}
+
+button {
+  border: solid transparent 2px;
+  border-radius: 20px;
+
+  font-size: 1.25rem;
+
+  color: #fff;
+  background-color: #333;
+
+  width: 12rem;
+  height: 2.5rem;
+  transition: 0.3s;
+  display: inline;
+}
+
+.table-container {
+  margin-top: 50px;
+  width: 350px;
+  padding: 20px;
+  background-color: #aaa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  border-radius: 20px;
+  border: 5px solid black;
+}
+
+span {
+  margin-bottom: 20px;
+}
+
+table {
+  width: 95%;
+  border: solid #fff;
+  text-align: center;
+}
+
+td,
+th {
+  border: #000 solid;
+}
+
+button:hover {
+  background-color: #444;
+  transition: 0.3s;
+}
+
+.rainbow-text {
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
