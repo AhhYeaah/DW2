@@ -1,0 +1,30 @@
+service: spa-backend2
+
+frameworkVersion: '2 || 3'
+
+
+provider:
+  name: aws
+  runtime: nodejs16.x
+  lambdaHashingVersion: 20201221
+  iamRoleStatements:
+      - Effect: Allow
+        Action:
+          - s3:PutObject
+        Resource: "arn:aws:s3:::s3-customers-screenshots-1234321/*"
+
+functions:
+  create:
+    handler: ./dist/handler.sendMessage
+    events:
+      - http:
+          method: post
+          path: /sendMessage
+          cors: true
+
+resources:
+  Resources:
+    s3Bucket:
+      Type: AWS::S3::Bucket
+      Properties:
+        BucketName: 's3-customers-screenshots-1234321'

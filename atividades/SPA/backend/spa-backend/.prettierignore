@@ -1,0 +1,9 @@
+node_modules
+src/database/migrations
+src/database/seed/*
+dist
+webpack/.entries
+coverage
+jest.config.ts
+src/generated
+*.yml

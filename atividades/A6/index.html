@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"
+      integrity="sha512-xIPqqrfvUAc/Cspuj7Bq0UtHNo/5qkdyngx6Vwt+tmbvTLDszzXM0G6c91LXmGrRx8KEPulT+AfOOez+TeVylg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1 class="rainbow-text">EU SOU HORRIVEL COM CSS</h1>
+    <main>
+      <form id="form">
+        <input type="text" name="cep" id="cep" placeholder="Digite seu CEP" />
+        <br />
+        <button>Procurar</button>
+      </form>
+    </main>
+    <div class="table-container">
+      <span>Insira um estado para ver as informações</span>
+      <table>
+        <tr>
+          <th>Suspeitos</th>
+          <th>Casos</th>
+          <th>Mortes</th>
+        </tr>
+        <tr>
+          <td id="suspeitos"></td>
+          <td id="casos"></td>
+          <td id="mortes"></td>
+        </tr>
+      </table>
+    </div>
+    <script type="module" src="./js/script.mjs"></script>
+  </body>
+</html>
